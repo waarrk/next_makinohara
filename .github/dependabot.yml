@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    target_branch: 'develop'
+    schedule:
+      interval: 'weekly'
+    allowed_updates:
+      - match:
+          update_type: 'all'
