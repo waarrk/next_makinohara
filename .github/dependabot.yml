@@ -5,6 +5,3 @@ updates:
     target_branch: 'develop'
     schedule:
       interval: 'weekly'
-    allowed_updates:
-      - match:
-          update_type: 'all'
