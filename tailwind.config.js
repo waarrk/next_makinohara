@@ -13,9 +13,10 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        base: '#081b2c',
-        main: '#38536e',
-        accent: '#dc8a31',
+        base_color: '#081b2c',
+        main_color: '#38536e',
+        accent_color: '#dc8a31',
+        brack: '#000000',
       },
     },
   },

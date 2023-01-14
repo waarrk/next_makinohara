@@ -3,9 +3,11 @@
     "clsx",
     "fontsource",
     "headlessui",
+    "ksnctf",
     "Makinohara",
     "pstyles",
-    "tailwindcss"
+    "tailwindcss",
+    "webp"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
