@@ -1,6 +1,6 @@
 # Makinohara
 
-[![Build Test](https://github.com/waarrk/next_makinohara/actions/workflows/build.yml/badge.svg)](https://github.com/waarrk/next_makinohara/actions/workflows/build.yml) <a href="https://codeclimate.com/github/waarrk/next_makinohara/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad927ea0aa0cccfea532/maintainability" /></a>
+[![Build Test](https://github.com/waarrk/next_makinohara/actions/workflows/build.yml/badge.svg)](https://github.com/waarrk/next_makinohara/actions/workflows/build.yml) [![CodeQL](https://github.com/waarrk/next_makinohara/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/waarrk/next_makinohara/actions/workflows/github-code-scanning/codeql) <a href="https://codeclimate.com/github/waarrk/next_makinohara/maintainability"><img src="https://api.codeclimate.com/v1/badges/ad927ea0aa0cccfea532/maintainability" /></a>
 
 Next.js13 を使った Nested Layout 実験用リポジトリです
 
