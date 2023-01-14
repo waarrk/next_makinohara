@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <>
+      <hr className='border-slate-200' />
       <section className='grid items-center justify-center gap-6 pt-6 pb-8 md:pt-10 md:pb-12 lg:pt-16 lg:pb-24'>
         <h1 className='text-3xl font-bold underline'>Good night world!</h1>
       </section>
