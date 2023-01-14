@@ -10,6 +10,13 @@ module.exports = {
       fontFamily: {
         inter: ['var(--font-inter)'],
       },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        base: '#081b2c',
+        main: '#38536e',
+        accent: '#dc8a31',
+      },
     },
   },
   plugins: [],

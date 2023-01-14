@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["clsx", "Makinohara", "pstyles", "tailwindcss"],
+  "cSpell.words": [
+    "clsx",
+    "fontsource",
+    "headlessui",
+    "Makinohara",
+    "pstyles",
+    "tailwindcss"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
