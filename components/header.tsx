@@ -11,51 +11,56 @@ import { useState } from 'react'
 export default function Header() {
   const [drawerOpened, setDrawerOpened] = useState(false)
   return (
-    <div className='flex-1 container md:max-w-[52rem] mx-auto my-4 px-8 md:px-4'>
-      <div className='flex items-center justify-between py-2'>
-        <div className='flex items-end justify-between gap-6'>
-          <h2 className='text-2xl font-bold leading-[1.1] tracking-tighter'>
+    <div className='bg-black pt-10 px-12'>
+      <div className='flex container md:max-w-[45rem] mx-auto'>
+        <div className='w-[100%] flex items-end justify-between gap-8'>
+          <h2 className='text-slate-200 text-2xl font-bold leading-[1.1] tracking-tighter'>
             waarrk
           </h2>
+
           <div className='hidden md:flex gap-2'>
             <Link
-              className='text-slate-700 hover:text-slate-900 hover:font-bold'
+              className='text-slate-300 hover:text-slate-200 hover:font-bold'
               href='/'
             >
               Blog
             </Link>
             <Link
-              className='text-slate-700 hover:text-slate-900 hover:font-bold'
+              className='text-slate-300 hover:text-slate-200 hover:font-bold'
               href='/'
             >
               Gallery
             </Link>
           </div>
-        </div>
 
-        <MenuIcon className='md:hidden' onClick={() => setDrawerOpened(true)} />
-        <Drawer
-          anchor={'right'}
-          open={drawerOpened}
-          onClose={() => setDrawerOpened(false)}
-        >
-          <div className='w-[33vw]'>
-            <div className='flex flex-col gap-2 items-start justify-center py-12'>
-              <Link
-                className='text-2xl pl-6 text-slate-700 hover:text-slate-900 hover:font-bold'
-                href='/'
-              >
-                Blog
-              </Link>
-              <Link
-                className='text-2xl pl-6 text-slate-700 hover:text-slate-900 hover:font-bold'
-                href='/'
-              >
-                Gallery
-              </Link>
+          <MenuIcon
+            className='md:hidden text-slate-200'
+            onClick={() => setDrawerOpened(true)}
+          />
+          <Drawer
+            anchor={'right'}
+            open={drawerOpened}
+            onClose={() => setDrawerOpened(false)}
+            color='default'
+          >
+            <div className='w-[33vw]'>
+              <div className='flex flex-col gap-2 items-start justify-center py-12'>
+                <Link
+                  className='text-xl pl-6 text-slate-700 hover:text-slate-900 hover:font-bold'
+                  href='/'
+                >
+                  Blog
+                </Link>
+                <Link
+                  className='text-xl pl-6 text-slate-700 hover:text-slate-900 hover:font-bold'
+                  href='/'
+                >
+                  Gallery
+                </Link>
+              </div>
             </div>
-          </div>
-        </Drawer>
+          </Drawer>
+        </div>
       </div>
     </div>
   )

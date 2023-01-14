@@ -16,6 +16,7 @@ module.exports = {
         base: '#081b2c',
         main: '#38536e',
         accent: '#dc8a31',
+        brack: '#000000',
       },
     },
   },
