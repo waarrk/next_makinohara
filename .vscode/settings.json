@@ -1,7 +1,5 @@
 {
-  "cSpell.words": [
-    "Makinohara"
-  ],
+  "cSpell.words": ["Makinohara", "pstyles", "tailwindcss"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
