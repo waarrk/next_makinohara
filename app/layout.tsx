@@ -1,4 +1,4 @@
-import '@/tailwindcss init -pstyles/globals.css'
+import '@/styles/globals.css'
 
 export default function RootLayout({
   children,
