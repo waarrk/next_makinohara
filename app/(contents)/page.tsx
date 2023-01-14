@@ -16,7 +16,7 @@ export default function Home() {
 
       <section className='grid justify-center gap-6 pt-12 py-8 md:py-12 lg:py-24'>
         <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
-          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-6xl'>
+          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
             Greetings
           </h2>
           <p className='max-w-[85%] leading-normal text-slate-700 sm:text-base sm:leading-7'>
@@ -34,7 +34,7 @@ export default function Home() {
 
       <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
         <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
-          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-6xl'>
+          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
             New
           </h2>
           <p className='max-w-[85%] leading-normal text-slate-700 sm:text-base sm:leading-7'>
@@ -49,7 +49,7 @@ export default function Home() {
 
       <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
         <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
-          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-6xl'>
+          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
             Photography
           </h2>
           <p className='max-w-[85%] leading-normal text-slate-700 sm:text-base sm:leading-7'>
@@ -71,7 +71,7 @@ export default function Home() {
 
       <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
         <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
-          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-6xl'>
+          <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
             Engineering
           </h2>
           <p className='max-w-[85%] leading-normal text-slate-700 sm:text-base sm:leading-7'>
