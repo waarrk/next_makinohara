@@ -1,15 +1,15 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import Header from './header'
+import Footer from './footer'
 
 export default {
-  title: 'Molecules/Header',
-  component: Header,
+  title: 'Molecules/Footer',
+  component: Footer,
   parameters: {
     layout: 'fullscreen',
   },
-} as ComponentMeta<typeof Header>
+} as ComponentMeta<typeof Footer>
 
-const Template: ComponentStory<typeof Header> = (args) => <Header />
+const Template: ComponentStory<typeof Footer> = (args) => <Footer />
 export const Normal = Template.bind({})
