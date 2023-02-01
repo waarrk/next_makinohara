@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Drawer from '@mui/material/Drawer'
 
 import MenuIcon from '@mui/icons-material/Menu'
-import AdjustIcon from '@mui/icons-material/Adjust'
 
 import { useState } from 'react'
 
