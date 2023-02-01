@@ -1,16 +1,35 @@
-import './globals.css'
+import '@/styles/globals.css'
 
-export default function RootLayout({
-  children,
-}: {
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
+
+import { Inter as FontSans } from '@next/font/google'
+
+import { ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+interface RootLayoutProps {
   children: React.ReactNode
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html
+      lang='ja'
+      className={twMerge(
+        clsx(
+          'bg-white font-sans text-slate-900 antialiased',
+          fontSans.variable,
+        ),
+      )}
+    >
       <head />
       <body>{children}</body>
     </html>

@@ -1,8 +1,21 @@
 {
-  "cSpell.words": ["Makinohara"],
+  "cSpell.words": [
+    "clsx",
+    "eyecatch",
+    "fontsource",
+    "headlessui",
+    "ksnctf",
+    "Makinohara",
+    "MICROCMS",
+    "pstyles",
+    "tailwindcss",
+    "webp"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
