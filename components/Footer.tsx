@@ -14,13 +14,13 @@ export default function Footer() {
       <div className='flex container md:max-w-[45rem] mx-auto pt-5'>
         <div className='w-[100%] flex items-center justify-between gap-8'>
           <div className='flex justify-between gap-4'>
-            <Link href='/'>
+            <Link href='https://www.instagram.com/waarrk/'>
               <InstagramIcon className='text-slate-700' />
             </Link>
-            <Link href='/'>
+            <Link href='https://github.com/waarrk'>
               <GitHubIcon className='text-slate-700' />
             </Link>
-            <Link href='/'>
+            <Link href='https://twitter.com/waarrk'>
               <TwitterIcon className='text-slate-700' />
             </Link>
           </div>
