@@ -20,6 +20,13 @@ export default function Header() {
             waarrk
           </Link>
 
+          <div className='md:hidden'>
+            <MenuIcon
+              className=' text-slate-200'
+              onClick={() => setDrawerOpened(true)}
+            />
+          </div>
+
           <div className='hidden md:flex gap-2'>
             <Link
               className='text-slate-300 hover:text-slate-200 hover:font-bold'
@@ -35,10 +42,6 @@ export default function Header() {
             </Link>
           </div>
 
-          <MenuIcon
-            className='md:hidden text-slate-200'
-            onClick={() => setDrawerOpened(true)}
-          />
           <Drawer
             anchor={'right'}
             open={drawerOpened}

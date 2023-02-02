@@ -21,7 +21,7 @@ export default function Home() {
           <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
             Engineering
           </h2>
-          <h2 className='text-base_color text-2xl font-bold leading-[1.1] tracking-tighter sm:text-2xl'>
+          <h2 className='text-base_color text-2xl font-bold leading-[1.1] tracking-tighter sm:text-2xl pt-4'>
             Laboratory
           </h2>
           <p className='max-w-[85%] leading-normal text-slate-700 sm:text-base sm:leading-7'>
