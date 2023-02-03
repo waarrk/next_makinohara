@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import Hero from '@/components/Hero'
+import NewPostTile from '@/components/NewPostTile'
 
 export default function Home() {
   return (
@@ -8,77 +9,26 @@ export default function Home() {
       <Hero />
 
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 mt-10'>
-        <a
-          href='#'
-          className='group h-48 md:h-64 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative'
-        >
-          <Image
-            src='/contents/catch.webp'
-            alt='Photo'
-            width={400}
-            height={400}
-            className='w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200'
-          />
-
-          <div className='bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none'></div>
-
-          <div className='relative p-4 mt-auto'>
-            <span className='block text-gray-200 text-sm'>July 19, 2021</span>
-            <h2 className='text-white text-xl font-semibold transition duration-100 mb-2'>
-              New trends in Tech
-            </h2>
-
-            <span className='text-indigo-300 font-semibold'>Read more</span>
-          </div>
-        </a>
-
-        <a
-          href='#'
-          className='group h-48 md:h-64 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative'
-        >
-          <Image
-            src='/contents/catch.webp'
-            alt='Photo'
-            width={400}
-            height={400}
-            className='w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200'
-          />
-
-          <div className='bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none'></div>
-
-          <div className='relative p-4 mt-auto'>
-            <span className='block text-gray-200 text-sm'>July 19, 2021</span>
-            <h2 className='text-white text-xl font-semibold transition duration-100 mb-2'>
-              New trends in Tech
-            </h2>
-
-            <span className='text-indigo-300 font-semibold'>Read more</span>
-          </div>
-        </a>
-
-        <a
-          href='#'
-          className='group h-48 md:h-64 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative'
-        >
-          <Image
-            src='/contents/catch.webp'
-            alt='Photo'
-            width={400}
-            height={400}
-            className='w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200'
-          />
-
-          <div className='bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none'></div>
-
-          <div className='relative p-4 mt-auto'>
-            <span className='block text-gray-200 text-sm'>July 19, 2021</span>
-            <h2 className='text-white text-xl font-semibold transition duration-100 mb-2'>
-              New trends in Tech
-            </h2>
-
-            <span className='text-indigo-300 font-semibold'>Read more</span>
-          </div>
-        </a>
+        <NewPostTile
+          title='New trends in Tech'
+          date='July 19, 2021'
+          image='/contents/catch.webp'
+        />
+        <NewPostTile
+          title='New trends in Tech'
+          date='July 19, 2021'
+          image='/contents/catch.webp'
+        />
+        <NewPostTile
+          title='New trends in Tech'
+          date='July 19, 2021'
+          image='/contents/catch.webp'
+        />
+        <NewPostTile
+          title='New trends in Tech'
+          date='July 19, 2021'
+          image='/contents/catch.webp'
+        />
       </div>
 
       <hr className='border-slate-200' />
