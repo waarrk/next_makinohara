@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-interface NewPostTileProps {
+interface PostTileProps {
   title: string
   date: string
   image: string
 }
 
-export default function NewPostTile({ title, date, image }: NewPostTileProps) {
+export default function PostTile({ title, date, image }: PostTileProps) {
   return (
     <>
       <a

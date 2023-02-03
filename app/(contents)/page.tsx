@@ -1,35 +1,13 @@
 import Image from 'next/image'
 
 import Hero from '@/components/Hero'
-import NewPostTile from '@/components/NewPostTile'
+import NewPostGrid from '@/components/NewPostGrid'
 
 export default function Home() {
   return (
     <>
       <Hero />
-
-      <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 mt-10'>
-        <NewPostTile
-          title='New trends in Tech'
-          date='July 19, 2021'
-          image='/contents/catch.webp'
-        />
-        <NewPostTile
-          title='New trends in Tech'
-          date='July 19, 2021'
-          image='/contents/catch.webp'
-        />
-        <NewPostTile
-          title='New trends in Tech'
-          date='July 19, 2021'
-          image='/contents/catch.webp'
-        />
-        <NewPostTile
-          title='New trends in Tech'
-          date='July 19, 2021'
-          image='/contents/catch.webp'
-        />
-      </div>
+      <NewPostGrid />
 
       <hr className='border-slate-200' />
 
