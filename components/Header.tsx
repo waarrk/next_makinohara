@@ -9,7 +9,7 @@ import { useState } from 'react'
 export default function Header() {
   const [drawerOpened, setDrawerOpened] = useState(false)
   return (
-    <div className='bg-black py-10 px-12'>
+    <div className='bg-black py-8 px-12'>
       <div className='flex container md:max-w-[52rem] mx-auto'>
         <div className='w-[100%] flex items-end justify-between gap-8'>
           <Link

@@ -19,11 +19,13 @@ export default function NewPostGrid() {
           date='July 19, 2021'
           image='/contents/catch.webp'
         />
-        <PostTile
-          title='New trends in Tech'
-          date='July 19, 2021'
-          image='/contents/catch.webp'
-        />
+        <div className='hidden xl:inline-block'>
+          <PostTile
+            title='New trends in Tech'
+            date='July 19, 2021'
+            image='/contents/catch.webp'
+          />
+        </div>
       </div>
     </>
   )
