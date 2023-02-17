@@ -1,6 +1,7 @@
 import PostTile from '@/components/PostTile'
 import { getList } from '@/libs/microcms'
 import Link from 'next/link'
+import dayjs from 'dayjs'
 
 export default async function NewPostGrid() {
   const { contents } = await getList({
@@ -20,7 +21,7 @@ export default async function NewPostGrid() {
             <div key={post.id}>
               <PostTile
                 title={post.title}
-                date={post.createdAt}
+                date={dayjs(post.createdAt).format('YYYY年MM月DD日')}
                 image={post.eyecatch?.url ?? ''}
               />
             </div>
