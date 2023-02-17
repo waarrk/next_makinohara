@@ -13,8 +13,6 @@ export default function Home() {
         <NewPostGrid />
       </ScrollRevealContainer>
 
-      <hr className='border-slate-200' />
-
       <ScrollRevealContainer move='top' delay={10}>
         <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
           <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
