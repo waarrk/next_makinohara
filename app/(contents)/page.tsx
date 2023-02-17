@@ -10,6 +10,7 @@ export default function Home() {
       <Hero />
 
       <ScrollRevealContainer move='top' delay={10}>
+        {/* @ts-expect-error Server Component */}
         <NewPostGrid />
       </ScrollRevealContainer>
 

@@ -4,14 +4,15 @@ interface PostTileProps {
   title: string
   date: string
   image: string
+  tag: string
 }
 
-export default function PostTile({ title, date, image }: PostTileProps) {
+export default function PostTile({ title, date, image, tag }: PostTileProps) {
   return (
     <>
       <a
         href='#'
-        className='group h-48 md:h-64 flex flex-col bg-gray-100 rounded-lg shadow-lg overflow-hidden relative'
+        className='group h-48 md:h-64 flex flex-col bg-gray-100 rounded-md shadow-lg overflow-hidden relative'
       >
         <Image
           src={image}
@@ -24,11 +25,15 @@ export default function PostTile({ title, date, image }: PostTileProps) {
         <div className='bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none'></div>
 
         <div className='relative p-4 mt-auto'>
-          <span className='block text-gray-200 text-sm'>{date}</span>
           <h2 className='text-white text-xl font-semibold transition duration-100 mb-2'>
             {title}
           </h2>
-          <span className='text-indigo-300 font-semibold'>Read more</span>
+          <div className='flex justify-between'>
+            <span className='block text-gray-200 text-sm'>{date}</span>
+            <span className='bg-blue-100 bg-opacity-50 text-white text-xs font-medium mr-2 px-2.5 py-1 rounded-full'>
+              {tag}
+            </span>
+          </div>
         </div>
       </a>
     </>

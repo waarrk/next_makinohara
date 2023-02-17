@@ -19,11 +19,15 @@ export default async function NewPostGrid() {
         {contents.map((post) => {
           return (
             <div key={post.id}>
-              <PostTile
-                title={post.title}
-                date={dayjs(post.createdAt).format('YYYY年MM月DD日')}
-                image={post.eyecatch?.url ?? ''}
-              />
+              <Link href={`/blog/${post.id}`}>
+                <PostTile
+                  title={post.title}
+                  date={dayjs(post.createdAt).format('YYYY年MM月DD日')}
+                  image={post.eyecatch?.url ?? ''}
+                  tag={post.category.name}
+                />
+                <a></a>
+              </Link>
             </div>
           )
         })}
