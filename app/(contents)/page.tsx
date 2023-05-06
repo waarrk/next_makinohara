@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Hero from '@/components/Hero'
 import NewPostGrid from '@/components/NewPostGrid'
 import ScrollRevealContainer from '@/libs/ScrollRevealContainer'
+import WriterInfo from '@/components/WriterInfo'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
             <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
               Engineering
             </h2>
+            <WriterInfo />
             <h2 className='text-base_color text-2xl font-bold leading-[1.1] tracking-tighter sm:text-2xl pt-4'>
               Laboratory
             </h2>

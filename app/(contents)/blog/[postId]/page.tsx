@@ -3,8 +3,9 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import parse from 'html-react-parser'
 import { getDetail, getList } from '@/libs/microcms'
+import WriterInfo from '@/components/WriterInfo'
 
-import Link from 'next/link'
+import dayjs from 'dayjs'
 
 export async function generateStaticParams() {
   const { contents } = await getList()
@@ -37,8 +38,22 @@ export default async function Page({ params: { postId } }: PageLayoutProps) {
       <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
         <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
           <div>
-            <h1>{post.title}</h1>
-            <h2>{time}</h2>
+            {/* タイトル生成 */}
+            <div>
+              <h2 className='text-base_color text-2xl font-bold leading-[1.1] tracking-tighter sm:text-3xl md:text-3xl'>
+                {post.title}
+              </h2>
+              <div className='flex items-center gap-2 mt-3'>
+                <span className='bg-blue-100 bg-opacity-50 text-black text-xs font-medium mr-2 px-2.5 py-1 rounded-full'>
+                  {post.category.name}
+                </span>
+                <h2>{dayjs(time).format('YYYY年MM月DD日')}</h2>
+              </div>
+            </div>
+
+            {/* ライターのプロフィール */}
+            <WriterInfo />
+
             <div>
               {post.contents.map((content, index) => {
                 switch (content.fieldId) {
