@@ -10,7 +10,12 @@ import type {
 export type Blog = {
   id: string
   title: string
-  content: string
+  contents: (
+    | RichEditorContent
+    | MarkdownContent
+    | AmazonLinkContent
+    | RichLinkContent
+  )[]
   category: {
     id: string
     name: string
@@ -18,6 +23,25 @@ export type Blog = {
   eyecatch?: MicroCMSImage
 } & MicroCMSDate
 
+//カスタムフィールドの型定義
+export type RichEditorContent = {
+  fieldId: 'richeditor'
+  richEditor: string
+}
+export type MarkdownContent = {
+  fieldId: 'markdown'
+  markDown: string
+}
+export type RichLinkContent = {
+  fieldId: 'richlink'
+  richLink: string
+}
+export type AmazonLinkContent = {
+  fieldId: 'amazonlink'
+  title: string
+  picture: MicroCMSImage
+  url: string
+}
 export type BlogResponse = {
   totalCount: number
   offset: number
@@ -25,10 +49,10 @@ export type BlogResponse = {
   contents: Blog[]
 }
 
+// 環境変数のチェック
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
   throw new Error('MICROCMS_SERVICE_DOMAIN is required')
 }
-
 if (!process.env.MICROCMS_API_KEY) {
   throw new Error('MICROCMS_API_KEY is required')
 }

@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "amazonlink",
     "clsx",
     "eyecatch",
     "fontsource",
@@ -8,7 +9,10 @@
     "Makinohara",
     "MICROCMS",
     "pstyles",
+    "richeditor",
+    "richlink",
     "tailwindcss",
+    "topicbox",
     "webp"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
