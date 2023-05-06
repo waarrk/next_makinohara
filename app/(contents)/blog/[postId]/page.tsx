@@ -33,6 +33,19 @@ export default async function Page({ params: { postId } }: PageLayoutProps) {
     notFound()
   }
 
+  // パースオプション
+  const options = {
+    replace: (domNode: any) => {
+      if (domNode.name === 'h1') {
+        return (
+          <h1 className='text-base_color text-2xl font-bold leading-[1.1] tracking-tighter sm:text-2xl py-4'>
+            {domNode.children[0].data}
+          </h1>
+        )
+      }
+    },
+  }
+
   return (
     <>
       <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
@@ -58,14 +71,7 @@ export default async function Page({ params: { postId } }: PageLayoutProps) {
               {post.contents.map((content, index) => {
                 switch (content.fieldId) {
                   case 'richeditor':
-                    return (
-                      <div
-                        key={index}
-                        dangerouslySetInnerHTML={{
-                          __html: `${content.richEditor}`,
-                        }}
-                      ></div>
-                    )
+                    return parse(content.richEditor, options)
                   case 'amazonlink':
                     return (
                       <div key={index}>
