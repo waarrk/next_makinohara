@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 import Hero from '@/components/Hero'
-import NewPostGrid from '@/components/NewPostGrid'
 import ScrollRevealContainer from '@/libs/ScrollRevealContainer'
+import WriterInfo from '@/components/WriterInfo'
 
 export default function Home() {
   return (
@@ -10,16 +10,12 @@ export default function Home() {
       <Hero />
 
       <ScrollRevealContainer move='top' delay={10}>
-        {/* @ts-expect-error Server Component */}
-        <NewPostGrid />
-      </ScrollRevealContainer>
-
-      <ScrollRevealContainer move='top' delay={10}>
         <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
           <div className='mx-auto flex flex-col gap-4 md:max-w-[52rem]'>
             <h2 className='text-base_color text-3xl font-bold leading-[1.1] tracking-tighter sm:text-4xl md:text-5xl'>
               Engineering
             </h2>
+            <WriterInfo />
             <h2 className='text-base_color text-2xl font-bold leading-[1.1] tracking-tighter sm:text-2xl pt-4'>
               Laboratory
             </h2>
