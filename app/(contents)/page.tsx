@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import Hero from '@/components/Hero'
-import NewPostGrid from '@/components/NewPostGrid'
 import ScrollRevealContainer from '@/libs/ScrollRevealContainer'
 import WriterInfo from '@/components/WriterInfo'
 
@@ -9,11 +8,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-
-      <ScrollRevealContainer move='top' delay={10}>
-        {/* @ts-expect-error Server Component */}
-        <NewPostGrid />
-      </ScrollRevealContainer>
 
       <ScrollRevealContainer move='top' delay={10}>
         <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
