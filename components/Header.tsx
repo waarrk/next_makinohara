@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import DrawerMenu from './DrawerMenu'
 
 import MenuIcon from '@mui/icons-material/Menu'
 
@@ -26,25 +25,7 @@ export default function Header() {
             />
           </div>
 
-          <div className='hidden md:flex gap-2'>
-            <Link
-              className='text-slate-300 hover:text-slate-200 hover:font-bold'
-              href='/blog'
-            >
-              Blog
-            </Link>
-            <Link
-              className='text-slate-300 hover:text-slate-200 hover:font-bold'
-              href='/'
-            >
-              Gallery
-            </Link>
-          </div>
-
-          <DrawerMenu
-            drawerOpened={drawerOpened}
-            setDrawerOpened={setDrawerOpened}
-          />
+          <div className='hidden md:flex gap-2'></div>
         </div>
       </div>
     </div>
