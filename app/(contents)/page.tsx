@@ -1,13 +1,13 @@
-import Image from 'next/image'
-
 import Hero from '@/components/Hero'
 import ScrollRevealContainer from '@/libs/ScrollRevealContainer'
 import WriterInfo from '@/components/WriterInfo'
+import GraphicSample from '@/components/GraphicSample'
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <GraphicSample />
 
       <ScrollRevealContainer move='top' delay={10}>
         <section className='grid justify-center gap-6 py-8 md:py-12 lg:py-24'>
